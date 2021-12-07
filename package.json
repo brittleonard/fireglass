@@ -1,5 +1,5 @@
 {
-  "name": "jamstack-ecommerce",
+  "name": "Girls-Gone-Glass",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -17,6 +17,7 @@
     "react-dom": "17.0.1",
     "react-icons": "^4.1.0",
     "react-toastify": "^6.2.0",
+    "stripe": "^8.183.0",
     "tailwindcss": "^2.0.2",
     "uuid": "^8.3.2"
   }

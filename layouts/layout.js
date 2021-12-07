@@ -19,7 +19,7 @@ export default function Layout({ children, categories }) {
             <div className="mb-4 sm:mr-16 max-w-48 sm:max-w-none">
               <Link href="/">
                 <a aria-label="Home">
-                  <img src="/logo.png" alt="logo" width="90" height="28" />
+                  <img src="/logo.png" alt="logo" width="100" height="28" />
                 </a>
               </Link>
             </div>
@@ -28,7 +28,7 @@ export default function Layout({ children, categories }) {
                 <a aria-label="Home">
                   <p className="
                     sm:mr-8 sm:mb-0
-                    mb-4 text-left text-smaller mr-4
+                    mb-4 text-left text-small mr-4
                   ">
                   Home
                   </p>
@@ -43,7 +43,7 @@ export default function Layout({ children, categories }) {
                     <a aria-label={category}>
                       <p className="
                           sm:mr-8 sm:mb-0
-                          mb-4 text-left text-smaller mr-4
+                          mb-4 text-left text-small mr-4
                         ">
                         {category.charAt(0).toUpperCase() + category.slice(1)}
                       </p>
@@ -55,7 +55,7 @@ export default function Layout({ children, categories }) {
                 <a aria-label="All categories">
                   <p className="
                     sm:mr-8 sm:mb-0
-                    mb-4 text-left text-smaller mr-4 
+                    mb-4 text-left text-small mr-4
                   ">
                   All
                   </p>
@@ -75,8 +75,8 @@ export default function Layout({ children, categories }) {
         flex w-fw px-12 py-8
         desktop:px-0
         border-solid
-        border-t border-gray-300">
-          <span className="block text-gray-700 text-xs">Copyright © 2021 JAMstack Ecommerce. All rights reserved.</span>
+        border-t border-gray-500">
+          <span className="block text-gray-700 text-xs">Copyright © 2021 BLeonard Designs. All rights reserved.</span>
           <div className="
             sm:justify-end sm:m-0
             flex flex-1 mt-4

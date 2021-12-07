@@ -19,6 +19,7 @@ import { loadStripe } from "@stripe/stripe-js"
 // recreating the `Stripe` object on every render.
 const stripePromise = loadStripe("xxx-xxx-xxx")
 
+
 function CheckoutWithContext(props) {
   return (
     <ContextProviderComponent>
@@ -34,7 +35,7 @@ function CheckoutWithContext(props) {
 }
 
 const calculateShipping = () => {
-  return 0
+  return 9.99
 }
 
 const Input = ({ onChange, value, name, placeholder }) => (
@@ -129,9 +130,9 @@ const Checkout = ({ context }) => {
   return (
     <div className="flex flex-col items-center pb-10">
       <Head>
-        <title>Jamstack ECommerce - Checkout</title>
+        <title> Checkout</title>
         <meta name="description" content={`Check out`} />
-        <meta property="og:title" content="Jamstack ECommerce - Checkpit" key="title" />
+        <meta property="og:title" content="Checking Out Now" key="title" />
       </Head>
       <div
         className="
@@ -145,7 +146,7 @@ const Checkout = ({ context }) => {
             <a aria-label="Cart">
               <div className="cursor-pointer flex  items-center">
                 <FaLongArrowAltLeft className="mr-2 text-gray-600" />
-                <p className="text-gray-600 text-sm">Edit Cart</p>
+                <p className="text-gray-600 text-sm">Back to Cart</p>
               </div>
             </a>
           </Link>
@@ -242,7 +243,7 @@ const Checkout = ({ context }) => {
                 <div className="pl-4 flex flex-1 my-2">
                   <p className="text-sm pr-10">Shipping</p>
                   <p className="w-38 flex justify-end">
-                    FREE SHIPPING
+                    $9.99
                   </p>
                 </div>
                 <div className="md:ml-4 pl-2 flex flex-1 bg-gray-200 pr-4 pb-1 pt-2 mt-2">

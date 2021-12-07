@@ -21,11 +21,11 @@
 
 @layer base {
   p, h1, h2, h3, h4, h5 {
-    color: rgba(0, 0, 0, .8);
+    color: rgba(2, 0, 0, .8);
     font-family: Eina;
   }
 }
 
 .Toastify__progress-bar--default {
-  background: #89bdf9 !important;
+  background: #f38e34 !important;
 }
